@@ -1,11 +1,12 @@
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>HTML Template</title>
+	<title>Эльдорадо</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<style>
+	<style type="text/css">
 		body {
 			width: 100% !important;
 			-webkit-text-size-adjust: 100%;
@@ -15,35 +16,762 @@
 			line-height: 100%;
 		}
 
-		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+		[style*="Verdana"] {
+			font-family: 'Verdana', arial, sans-serif !important;
+		}
+
+		[style*="DINPro"] {
+			font-family: 'DINPro', arial, sans-serif !important;
+		}
 
 		img {
 			outline: none;
 			text-decoration: none;
-			border:none;
+			border: none;
 			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
+			max-width: 100% !important;
 			margin: 0;
 			padding: 0;
 			display: block;
 		}
-    
+
+		h2,
+		p {
+			margin: 0;
+		}
+
 		table td {
 			border-collapse: collapse;
 		}
-    
+
 		table {
 			border-collapse: collapse;
 			mso-table-lspace: 0pt;
 			mso-table-rspace: 0pt;
 		}
+
+		.main-top td {
+			font-family: 'DINPro', arial, Helvetica, sans-serif;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 1.4;
+			text-transform: uppercase;
+			color: #ffffff;
+		}
+
+		.delivery-td td {
+			font-family: 'Verdana', Arial, Helvetica, sans-serif;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 1.2;
+			color: #353535;
+		}
+
+		.payment-td td {
+			font-family: 'Verdana', Arial, Helvetica, sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1.2;
+			color: #393d41;
+		}
+
+		.descr-td td {
+			font-family: 'Verdana', Arial, Helvetica, sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 1.2;
+			color: #ffffff;
+		}
+
+		.letter-td td p {
+			font-family: 'Verdana', Arial, Helvetica, sans-serif;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 23px;
+			color: #ffffff;
+		}
+
+		.letter-td td p a {
+			color: #ffffff;
+		}
+
+		.footer-td td {
+			font-family: 'Verdana', Arial, Helvetica, sans-serif;
+			font-weight: 400;
+			font-size: 9px;
+			line-height: 14px;
+			color: #8b8e90;
+		}
+
+		.footer-td td a {
+			color: #8b8e90;
+		}
+
+		.networks-td td {
+			padding-right: 45px;
+		}
+
+		@media (max-width: 630px) {
+			.table-600 {
+				width: 450px !important;
+			}
+
+			.table-540 {
+				width: 405px !important;
+			}
+
+			.personage-td {
+				display: none !important;
+			}
+
+			.order-td .table-540 {
+				width: 370px !important;
+			}
+
+			.order-td {
+				padding-bottom: 30px !important;
+			}
+
+			.table-505 {
+				width: 385px !important;
+			}
+
+			.main-top td {
+				font-size: 11px !important;
+			}
+
+			.main-top .main-top-td {
+				padding-right: 5px !important;
+			}
+
+			.main-top-td .count {
+				padding-right: 10px !important;
+			}
+
+			.main-order img {
+				width: 60px !important;
+				height: 40px !important;
+			}
+
+			.main-order .order-image {
+				width: 85px !important;
+				padding-right: 5px !important;
+			}
+
+			.main-order .order-title a {
+				font-size: 10px !important;
+				line-height: 15px !important;
+			}
+
+			.contacts-td img {
+				width: 18px !important;
+				height: 18px !important;
+			}
+
+			.contacts-td .icon-man {
+				padding-right: 10px !important;
+				width: 18px !important;
+				height: 18px !important;
+			}
+
+			.contacts-td .icon-car {
+				padding-right: 10px !important;
+				width: 22px !important;
+				height: 18px !important;
+			}
+
+			.contacts-td .icon-car img {
+				width: 22px !important;
+			}
+
+			.payment-td td {
+				font-size: 15px !important;
+			}
+
+			.bonuses-td img {
+				width: 190px !important;
+				height: 115px !important;
+			}
+
+			.descr-td td {
+				font-size: 13px !important;
+			}
+
+			.letter-td td p br {
+				display: none !important;
+			}
+
+			.letter-td td p {
+				font-size: 12px !important;
+			}
+
+			.networks-td td {
+				padding-right: 30px !important;
+			}
+
+			.networks-td .youtube {
+				padding-right: 0 !important;
+			}
+
+			.footer-td .call {
+				padding-bottom: 13px !important;
+			}
+
+			.footer-td .phone a {
+				font-size: 15px !important;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.main-table {
+				padding-right: 15px !important;
+				padding-left: 15px !important;
+			}
+
+			.wrapper-td {
+				height: 15px !important;
+			}
+		}
 	</style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
-		
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">
+		Транзакционное письмо
+	</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#2f2f2f">
+		<tr>
+			<td class="main-table">
+				<table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+					<tr>
+						<td class="wrapper-td" height="30" width="600"></td>
+					</tr>
+					<tr>
+						<td class="header-td" style="padding-top: 13px;padding-bottom: 12px;" bgcolor="#ffffff">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td class="logo" align="left">
+										<a href="https://www.eldorado.ru/" target="_blank" title="Эльдорадо">
+											<img src="https://student476.github.io/email-images/eldorado/logo.png" width="150" height="16"
+												alt="Эльдорадо" />
+										</a>
+									</td>
+									<td class="menu" align="right">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="padding-right: 9px;">
+													<a href="https://www.eldorado.ru/personal/club/operations/" target="_blank" title="Профиль">
+														<img src="https://student476.github.io/email-images/eldorado/profile.png" width="21"
+															height="21" alt="Профиль" />
+													</a>
+												</td>
+												<td>
+													<a href="	https://www.eldorado.ru/d/" target="_blank" title="Каталог">
+														<img src="https://student476.github.io/email-images/eldorado/menu.png" width="22"
+															height="22" alt="Каталог" />
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="order-td" bgcolor="#c2002e" style="padding-top: 30px;">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td background="https://student476.github.io/email-images/eldorado/message-bg.png"
+										style="background-repeat: no-repeat;" bgcolor="#c2002e" width="391" height="121" valign="top">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="order-text" style="padding-top: 13px;padding-bottom: 10px;padding-left: 15px;">
+													<h2
+														style="font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 14px;line-height: 1.2;color: #ffffff;">
+														Ваш заказ <span>№ХХХХХХХХХ</span> обрабатывается
+													</h2>
+												</td>
+											</tr>
+											<tr>
+												<td class="order-text" style="padding-left: 15px;">
+													<p
+														style="font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;font-size: 13px;line-height: 16.5px;color: #ffffff;">
+														Мы подтвердим Ваш заказ в ближайшее время, <br /> а так же сообщим ожидаемую дату
+														доставки <br /> по СМС и эл. почте или позвоним для уточнения.
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="personage-td" align="right">
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td>
+													<img src="https://student476.github.io/email-images/eldorado/personage.gif" width="182"
+														height="173" alt="Персонаж" />
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="main-td" bgcolor="#c2002e">
+							<table cellpadding="0" cellspacing="0" align="center" border="0" width="100%">
+								<tr>
+									<td style="background-repeat: no-repeat;" background="https://student476.github.io/email-images/eldorado/background.png" bgcolor="#c2002e" valign="top">
+										<!--[if gte mso 9]>
+											<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+											<v:fill type="frame" src="https://student476.github.io/email-images/eldorado/background.png" color="#c2002e" />
+											<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+										<![endif]-->
+										<div>
+											<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+												<tr>
+													<td class="main-top" bgcolor="#7eb928"
+														style="padding-top: 17px;padding-bottom: 17px;border-top-left-radius: 8px;border-top-right-radius: 8px;">
+														<table class="main table-505" cellpadding="0" cellspacing="0" width="505" align="center">
+															<tr>
+																<td align="left">
+																	товар
+																</td>
+																<td class="main-top-td" align="right" style="padding-right: 15px;">
+																	<table cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="count" style="padding-right: 20px;">количество</td>
+																			<td>стоимость</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="main-order" bgcolor="#ffffff"
+														style="padding-top: 15px;padding-bottom: 9px;border-bottom: 1px solid #f7f7f7;">
+														<table class="main table-505" cellpadding="0" cellspacing="0" width="505" align="center">
+															<tr>
+																<td class="order-image" style="width: 94px;padding-right: 24px;">
+																	<a href="https://www.eldorado.ru/cat/detail/ultra-hd-4k-oled-televizor-55-sony-kd-55a8/"
+																		target="_blank" title="Ultra HD (4K) OLED телевизор 55&quot; Sony KD-55A8"
+																		style="display: inline-block;">
+																		<img src="https://student476.github.io/email-images/eldorado/tv.jpg" width="94"
+																			height="59" alt="Ultra HD (4K) OLED телевизор 55&quot; Sony KD-55A8" />
+																	</a>
+																</td>
+																<td class="order-title" style="width: 180px;text-align: left;">
+																	<a href="https://www.eldorado.ru/cat/detail/ultra-hd-4k-oled-televizor-55-sony-kd-55a8/"
+																		target="_blank" title="Ultra HD (4K) OLED телевизор 55&quot; Sony KD-55A8"
+																		style="display: inline-block;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;color: #353535;font-size: 12px;line-height: 17px;">
+																		Ultra HD (4K) OLED телевизор 55" Sony KD-55A8
+																	</a>
+																</td>
+																<td
+																	style="width: 94px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;color: #353535;font-size: 12px;line-height: 1.2;text-align: center;">
+																	1
+																</td>
+																<td
+																	style="width: 94px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;color: #353535;font-size: 12px;line-height: 1.2;text-align: center;">
+																	35 990 р.
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="main-order" bgcolor="#ffffff"
+														style="padding-top: 15px;padding-bottom: 9px;border-bottom: 1px solid #f7f7f7;">
+														<table class="main table-505" cellpadding="0" cellspacing="0" width="505" align="center">
+															<tr>
+																<td class="order-image" style="width: 94px;padding-right: 24px;">
+																	<a href="https://www.eldorado.ru/cat/detail/robot-pylesos-tefal-explorer-serie-60-rg7455wh/"
+																		target="_blank" title="Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)"
+																		style="display: inline-block;">
+																		<img src="https://student476.github.io/email-images/eldorado/hoover.jpg" width="94"
+																			height="59" alt="Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)" />
+																	</a>
+																</td>
+																<td class="order-title" style="width: 180px;text-align: left;">
+																	<a href="https://www.eldorado.ru/cat/detail/robot-pylesos-tefal-explorer-serie-60-rg7455wh/"
+																		target="_blank" title="Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)"
+																		style="display: inline-block;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;color: #353535;font-size: 12px;line-height: 17px;">
+																		Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)
+																	</a>
+																</td>
+																<td
+																	style="width: 94px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;color: #353535;font-size: 12px;line-height: 1.2;text-align: center;">
+																	1
+																</td>
+																<td
+																	style="width: 94px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;color: #353535;font-size: 12px;line-height: 1.2;text-align: center;">
+																	35 990 р.
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="delivery-td" bgcolor="#ffffff"
+														style="padding-top: 14.5px;padding-bottom: 14.5px;border-bottom: 1px solid #f7f7f7;">
+														<table class="main table-505" cellpadding="0" cellspacing="0" width="505" align="center">
+															<tr>
+																<td align="left">
+																	<table cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td style="padding-right: 9px;">
+																				<img src="https://student476.github.io/email-images/eldorado/car.png"
+																					width="19.5" height="13.5" alt="Доставка" />
+																			</td>
+																			<td>
+																				Доставка
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td align="right" style="padding-right: 37px;">
+																	290 р.
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="payment-td" bgcolor="#ffffff" style="padding-top: 12px;padding-bottom: 12.5px;">
+														<table class="main table-505" cellpadding="0" cellspacing="0" width="505" align="center">
+															<tr>
+																<td align="left" style="font-size: 17px;text-transform: uppercase;">
+																	к оплате:
+																</td>
+																<td align="right">
+																	56 270 р.
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="contacts-td" bgcolor="#f3f3f3"
+														style="padding-top: 20px;padding-bottom: 24px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;">
+														<table class="main table-505" cellpadding="0" cellspacing="0" width="505" align="center">
+															<tr>
+																<td align="left" valign="top">
+																	<table cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="icon-man" style="padding-right: 15px;display: inline-block; "
+																				width="26" height="26">
+																				<img src="https://student476.github.io/email-images/eldorado/man.png" width="26"
+																					height="26" alt="Получатель" />
+																			</td>
+																			<td>
+																				<table cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td
+																							style="padding-bottom: 4px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 12px;line-height: 12px;color: #393d41;">
+																							Получатель
+																						</td>
+																					</tr>
+																					<tr>
+																						<td
+																							style="padding-bottom: 6px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;font-size: 12px;line-height: 1.2;color: #393d41;">
+																							Иван Иванович Иванов
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>
+																							<p
+																								style="font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;font-size: 11px;line-height: 12px;color: #8c8c8c;">
+																								Мы направили sms на номер <br /><span>+7 ХХХ ХХХ ХХ ХХ</span><br /> с
+																								подтверждением заказа.
+																							</p>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																<td align="right" valign="top" style="text-align: left;">
+																	<table cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="icon-car" style="padding-right: 15px;display: inline-block;" width="37"
+																				height="26">
+																				<img src="https://student476.github.io/email-images/eldorado/car.png" width="37"
+																					height="26" alt="Доставка" />
+																			</td>
+																			<td>
+																				<table cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td
+																							style="padding-bottom: 4px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 12px;line-height: 12px;color: #393d41;">
+																							Доставка курьером
+																						</td>
+																					</tr>
+																					<tr>
+																						<td
+																							style="padding-bottom: 6px; font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 400;font-size: 12px;line-height: 1.2;color: #393d41;">
+																							Москва, ул. Тихая,д.2а,кв.12
+																						</td>
+																					</tr>
+																					<tr>
+																						<td
+																							style="font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 11px;line-height: 12px;color: #353535;opacity: 0.54;">
+																							Дата доставки заказа: <span
+																								style="font-weight: 400;display: block;">25.03.2020</span>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td
+																							style="font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 11px;line-height: 12px;color: #353535;opacity: 0.54;">
+																							Время: <span style="font-weight: 400;">с 09:00 по 22:00</span>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<!--[if gte mso 9]>
+												</v:textbox>
+											</v:rect>
+										<![endif]-->
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="bonuses-td" bgcolor="#c2002e" style="padding-top: 10px;padding-bottom: 23px;">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td align="left">
+										<a href="	https://www.eldorado.ru/club/referral/" style="display: inline-block;" target="_blank"
+											title="Приглашайте друзей и получайте бонусы">
+											<img src="https://student476.github.io/email-images/eldorado/friend.gif" width="254" height="139"
+												alt="Приглашайте друзей и получайте бонусы" />
+										</a>
+									</td>
+									<td align="right">
+										<a href="https://www.eldorado.ru/promo/prm-bonuses-for-feedback/" style="display: inline-block;"
+											target="_blank" title="Дарим бонусы за отзыв">
+											<img src="https://student476.github.io/email-images/eldorado/review.gif" width="254" height="139"
+												alt="Дарим бонусы за отзыв" />
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="descr-td" bgcolor="#c2002e" style="padding-bottom: 15px;">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td align="center" style="padding-bottom: 13px;font-weight: 700;">
+										Ждем вас снова!
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										Ваш Эльдорадо.
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="letter-td" bgcolor="#a60229" style="padding-top: 20px;padding-bottom: 21px">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td align="center">
+										<p>
+											Это письмо было отправлено автоматически. <br /> Если вы не создавали заказ на нашем ресурсе, <a
+												href="https://www.eldorado.ru/help/eldorado/contact_us.php" target="_blank"
+												title="сообщите нам">сообщите нам</a> об этом.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="letter-td" bgcolor="#76bc34" style="padding-top: 4px;padding-bottom: 4px">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td align="left">
+										<a href="https://www.eldorado.ru/" style="display: inline-block;" target="_blank" title="Эльдорадо">
+											<img src="https://student476.github.io/email-images/eldorado/logo-white.png" width="160"
+												height="18" alt="Эльдорадо" />
+										</a>
+									</td>
+									<td>
+										<a href="https://www.eldorado.ru/promo/internetrassrochka/" target="_blank"
+											title="Рассрочка онлайн за 1 минуту" style="display: inline-block;">
+											<img src="https://student476.github.io/email-images/eldorado/installment.png" width="77"
+												height="50" alt="Рассрочка онлайн за 1 минуту" />
+										</a>
+									</td>
+									<td>
+										<a href="https://www.eldorado.ru/promo/110-uverennosti-v-tsene/" target="_blank"
+											title="Гарантия низкой цены" style="display: inline-block;">
+											<img src="https://student476.github.io/email-images/eldorado/warranty.png" width="77" height="50"
+												alt="Гарантия низкой цены" />
+										</a>
+									</td>
+									<td>
+										<a href="https://www.eldorado.ru/help/delivery/" target="_blank" title="Быстрая и бережная доставка"
+											style="display: inline-block;">
+											<img src="https://student476.github.io/email-images/eldorado/delivery.png" width="77" height="50"
+												alt="Быстрая и бережная доставка" />
+										</a>
+									</td>
+									<td>
+										<a href="https://www.eldorado.ru/club/" target="_blank" title="Бонусная программа Эльдорадости"
+											style="display: inline-block;">
+											<img src="https://student476.github.io/email-images/eldorado/bonus.png" width="96" height="50"
+												alt="Бонусная программа Эльдорадости" />
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-td" bgcolor="#393e42" style="padding-top: 18px;padding-bottom: 36px">
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td align="left" width="50%">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="call"
+													style="padding-bottom: 18px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 11px;line-height: 1.2;color: #ffffff;">
+													Звоните
+												</td>
+											</tr>
+											<tr>
+												<td class="phone">
+													<a href="tel:+78002502525" title="Звонок"
+														style="font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 18px;line-height: 23px;color: #ffffff;text-decoration: none;">
+														8 800 250 25 25
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="right" width="50%" valign="top" style="text-align: left;">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td
+													style="padding-bottom: 13px;font-family: Arial, Helvetica, sans-serif, 'Verdana';font-weight: 700;font-size: 11px;line-height: 1.2;color: #ffffff;">
+													Следите за новостями
+												</td>
+											</tr>
+											<tr>
+												<td class="networks-td">
+													<table cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																<a href="https://www.instagram.com/eldorado_ru/" style="display: inline-block;"
+																	target="_blank" title="Instagram">
+																	<img src="https://student476.github.io/email-images/lancome/insta.png"
+																		alt="Instagram" />
+																</a>
+															</td>
+															<td>
+																<a href="https://www.facebook.com/Eldorado.Stores" style="display: inline-block;"
+																	target="_blank" title="Facebook">
+																	<img src="https://student476.github.io/email-images/lancome/facebook.png"
+																		alt="Facebook" />
+																</a>
+															</td>
+															<td>
+																<a href="https://ok.ru/eldorado.stores" style="display: inline-block;" target="_blank"
+																	title="Odnoklassniki">
+																	<img src="https://student476.github.io/email-images/lancome/classmates.png"
+																		alt="Odnoklassniki" />
+																</a>
+															</td>
+															<td>
+																<a href="https://vk.com/eldorado_stores" style="display: inline-block;" target="_blank"
+																	title="VK">
+																	<img src="https://student476.github.io/email-images/lancome/vk.png" alt="VK" />
+																</a>
+															</td>
+															<td class="youtube" style="padding-right: 0;">
+																<a href="https://www.youtube.com/user/eldoradovideo" style="display: inline-block;"
+																	target="_blank" title="Youtube">
+																	<img src="https://student476.github.io/email-images/eldorado/youtube.png"
+																		alt="Youtube" />
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td style="padding-top: 15px;padding-bottom: 5px;">
+										<p>
+											Вы получили это письмо, так как подписались на рассылку от Эльдорадо. Чтобы не пропускать наши
+											акции и скидки, добавьте адрес <a
+												href="https://eldorado@club.eldorado.ru">eldorado@club.eldorado.ru</a>
+											в адресную книгу.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom: 22px;">
+										Вы можете <a href="{{UnsubscribeUrl}}" title="отписаться">отписаться</a>, но мы будем скучать :(
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom: 22px;">
+										<p>
+											Цены действительны на момент отправки письма и могут различаться в зависимости от региона покупки.
+										</p>
+									</td>
+								</tr>
+							</table>
+							<table class="main table-540" cellpadding="0" cellspacing="0" width="540" align="center">
+								<tr>
+									<td align="left">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td>
+													Веб-версия по <a href="{{WebLetterUrl}}" title="Веб-версия">ссылке.</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="right">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td>© Эльдорадо, 2021</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="wrapper-td" height="30" width="600"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
 	</table>
 </body>
 
